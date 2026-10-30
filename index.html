@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mini Arcade: tres juegos, un reto y tus mejores récords.">
+  <title>Mini Arcade | Juega y supera tu récord</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <script type="module" src="./js/home.js"></script>
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header shell">
+      <a class="brand" href="./index.html" aria-label="Mini Arcade, inicio"><span class="brand-mark" aria-hidden="true">✦</span><span>MINI<span class="text-gradient">ARCADE</span></span></a>
+      <span class="header-tag">3 JUEGOS · 1 RETO</span>
+    </header>
+
+    <main class="shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> TU ARCADE PERSONAL</p>
+        <h1 id="hero-title">JUEGA. MEJORA.<br><span class="text-gradient">ROMPE TU RÉCORD.</span></h1>
+        <p class="hero-description">Tres desafíos rápidos para poner a prueba tus reflejos, tu memoria y tu velocidad al escribir. Sin cuentas, sin instalaciones y con tus mejores marcas guardadas.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="./games/reflex/index.html">⚡ Jugar ahora <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#records">Ver mis récords</a>
+        </div>
+      </section>
+
+      <section class="section-games" aria-labelledby="games-title">
+        <div class="section-head"><div><p class="eyebrow">ELIGE TU DESAFÍO</p><h2 id="games-title">Zona de juegos</h2></div><span class="section-count">01 DISPONIBLE / 03</span></div>
+        <div class="games-grid">
+          <article class="game-card game-card-active">
+            <div class="card-top"><span class="game-number">01 / REFLEJOS</span><span class="badge badge-ready">● DISPONIBLE</span></div>
+            <div class="game-symbol reflex-symbol" aria-hidden="true">⚡</div>
+            <h3>Reflex Challenge</h3>
+            <p>Espera a que la pantalla se ponga verde. Reacciona lo más rápido que puedas. ¡Ni un milisegundo de más!</p>
+            <div class="game-meta"><span>Tu mejor marca</span><strong id="record-reflex">Sin récord</strong></div>
+            <a class="button button-primary button-full" href="./games/reflex/index.html">ENTRAR AL JUEGO <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="game-card">
+            <div class="card-top"><span class="game-number">02 / MEMORIA</span><span class="badge badge-soon">EN DESARROLLO</span></div>
+            <div class="game-symbol memory-symbol" aria-hidden="true">◈</div>
+            <h3>Memory Match</h3>
+            <p>Encuentra 6 parejas entre 12 cartas. Recuerda sus posiciones e intenta ganar usando pocos movimientos.</p>
+            <div class="game-meta"><span>Tu mejor marca</span><strong id="record-memory">Sin récord</strong></div>
+            <a class="button button-outline button-full" href="./games/memory/index.html">VER ESTADO <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="game-card">
+            <div class="card-top"><span class="game-number">03 / ESCRITURA</span><span class="badge badge-soon">EN DESARROLLO</span></div>
+            <div class="game-symbol typing-symbol" aria-hidden="true">⌨</div>
+            <h3>Typing Speed</h3>
+            <p>Escribe la frase antes de que termine el tiempo. Demuestra tu velocidad y precisión en cada ronda.</p>
+            <div class="game-meta"><span>Tu mejor marca</span><strong id="record-typing">Sin récord</strong></div>
+            <a class="button button-outline button-full" href="./games/typing/index.html">VER ESTADO <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="records" class="records-panel" aria-labelledby="records-title">
+        <div class="records-copy"><p class="eyebrow">TUS LOGROS</p><h2 id="records-title">Récords personales</h2><p>Se guardan automáticamente en este navegador. Si quieres conservar una copia física, descarga el archivo <code>records.txt</code>.</p><p id="export-message" role="status" aria-live="polite" class="notice"></p></div>
+        <button id="download-records" class="button button-primary" type="button">↓ Descargar records.txt</button>
+      </section>
+    </main>
+
+    <footer class="site-footer shell"><span>MINI ARCADE · Proyecto universitario</span><span>HTML · CSS · JavaScript</span></footer>
+  </div>
+</body>
+</html>
