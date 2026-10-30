@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reflex Challenge: mide tu tiempo de reacción.">
+  <title>Reflex Challenge | Mini Arcade</title>
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./script.js"></script>
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header shell"><a class="brand" href="../../index.html"><span class="brand-mark">✦</span><span>MINI<span class="text-gradient">ARCADE</span></span></a><a class="back-link" href="../../index.html">← Volver al menú</a></header>
+    <main class="shell reflex-main">
+      <div class="reflex-intro"><p class="eyebrow">JUEGO 01 / REFLEJOS</p><h1>REFLEX <span class="text-gradient">CHALLENGE</span></h1><p>Cuando la zona se ponga <strong class="green">verde</strong>, haz clic o tócala lo más rápido posible. Si pulsas antes, pierdes el intento.</p></div>
+      <section class="play-layout" aria-label="Juego de reflejos">
+        <div class="play-column">
+          <button class="arena" id="arena" type="button" data-state="idle" aria-describedby="arena-detail">
+            <span id="arena-icon" class="arena-icon" aria-hidden="true">⚡</span>
+            <span id="arena-title" class="arena-title">¿QUÉ TAN RÁPIDO ERES?</span>
+            <span id="arena-detail" class="arena-detail">Pulsa aquí o presiona «Iniciar partida».</span>
+          </button>
+          <div class="arena-actions"><button id="start-btn" class="button button-primary" type="button">INICIAR PARTIDA ↗</button><span class="hint">También funciona tocando el panel</span></div>
+        </div>
+        <aside class="score-panel">
+          <div class="score-card"><span class="score-label">TU MEJOR TIEMPO</span><strong id="best-time">Sin récord</strong><small>Menos milisegundos = mejor</small></div>
+          <div class="score-card"><span class="score-label">ÚLTIMO INTENTO</span><strong id="last-time">—</strong><small id="last-message">Aún no has jugado</small></div>
+          <div class="tip-card"><h2>Cómo jugar</h2><ol><li>Inicia la partida.</li><li>Espera a que cambie a verde.</li><li>Pulsa de inmediato.</li><li>Supera tu mejor marca.</li></ol></div>
+        </aside>
+      </section>
+      <p class="live-message" id="status-message" role="status" aria-live="polite">Listo para comenzar.</p>
+    </main>
+    <footer class="site-footer shell"><span>MINI ARCADE · Reflex Challenge</span><a href="../../index.html">Ir al menú principal ↑</a></footer>
+  </div>
+</body>
+</html>
